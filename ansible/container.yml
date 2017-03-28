@@ -12,6 +12,9 @@ services:
   #     environment:
   #       - "DEBUG=1"
   #
+    main:
+        image: centos:7
+        command: ["/opt/testapp/hello.py"]
 registries: {}
   # Add optional registries used for deployment. For example:
   #  google:
