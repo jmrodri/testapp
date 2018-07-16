@@ -1,0 +1,21 @@
+version: 1.0
+name: testapp
+description: your description
+bindable: False
+async: optional
+metadata:
+  displayName: testapp
+plans:
+  - name: default
+    description: This default plan deploys testapp
+    free: True
+    metadata: {}
+    parameters:
+    - name: vncpass
+      title: VNC Password
+      type: string
+      required: true
+      updatable: true
+      display_type: password
+      maximum: 10
+      minimum: 2
